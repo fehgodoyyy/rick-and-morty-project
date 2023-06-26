@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #262c3a;
+  font-family: "Anek Gujarati", sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .titleBoxBackground {
+    flex-wrap: wrap;
+  }
+  .titleBox.flex {
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
